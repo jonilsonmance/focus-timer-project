@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Focus-Timer 2.0</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script type="module" src="main.js" defer></script>
+</head>
+<body>
+
+  <div id="app">
+
+    <div id="timer">
+      <section id="timer-icons" class="flex">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+
+      <section id="controls" class="flex">
+
+        <button 
+          data-action="startTime"
+          class="ph ph-play-circle">
+        </button>
+        <button
+          data-action="stopTime"
+          class="ph ph-stop-circle"></button>
+        <button 
+          data-action="sumTime"
+          class="ph ph-plus-circle">
+        </button>
+        <button
+          data-action="subTime" 
+          class="ph ph-minus-circle">
+        </button>
+
+      </section>
+    </div>
+
+
+    <section id="cards">
+
+      <button  
+        data-action="musicFlorest"
+        class="ph ph-tree ">
+      </button> 
+
+      <button
+        data-action="musicRain"
+        class="ph ph-cloud-rain">
+      </button> 
+
+      <button 
+        data-action="musiCoffeMachine"
+        class="ph ph-storefront">
+      </button> 
+
+      <button 
+        data-action="firePlace"
+        class="ph ph-fire">
+      </button> 
+
+    </section>
+
+  </div>
+  
+</body>
+</html>
+

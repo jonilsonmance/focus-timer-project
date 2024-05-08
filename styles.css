@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --Font-Family-One: "Roboto", sans-serif;
+
+  --Tm-Fz-One: 1.6rem;
+  --Tm-Fz-Two: 12.6rem;
+
+  --Bg-color:#323238;
+  --Bg-color-Two:#E1E1E6;
+  --Bg-color-Tree:#02799D;
+  --Bg-color-Four: red;
+
+
+  --color-Font-One:white;
+  --color-Font-Two:#323238;
+
+  font-size:clamp(40%, 1% + 2vw, 62.5%)
+
+}
+
+body{
+  font-size: var(1.6rem);
+  font-family: var(--Font-Family-One);
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  color: var(--color-Font-Two);
+  
+}
+
+#app{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 19.2rem;
+  
+}
+
+.flex{
+  display: flex;
+}
+
+#timer{
+  display: flex;
+  flex-direction: column;
+}
+
+#timer-icons{
+  font-size: var(--Tm-Fz-Two);
+  font-weight: medium;
+}
+
+#controls{
+  margin-top: 4.8rem;
+  gap: 4.0rem;
+}
+
+button{
+  background-color: transparent;
+  border: 0;
+  color: var(--color-Font);
+  cursor: pointer;
+
+  font-size: 4.8rem;
+
+  border-radius: 5rem;
+
+}
+
+button:hover {
+  background-color: var(--Bg-color-Four);
+  color:var(--color-Font-One);
+}
+
+#cards{
+  display: grid;
+  grid-template-areas: 
+  'button button';
+  gap: 3.2rem;
+  cursor: pointer;
+  
+}
+
+#cards button{
+  background-color: var(--Bg-color-Two) ;
+  border-radius: 2.4rem;
+  padding: 4rem ;
+  transition: background-color 0.3s ease;
+}
+
+#cards button:hover {
+  background-color: var(--Bg-color-Tree);
+  color: var(--Bg-color-Two);
+}
+
+#cards button.play-button{
+  background-color: var(--Bg-color-Tree);
+  color: var(--Bg-color-Two);
+}
+
+
+
+
+
+
+
+
